@@ -1,18 +1,3 @@
-<!-- 
-====================================================
-CLUB DE ROBÓTICA TECHNEX - LANDING PAGE
-====================================================
-📁 Archivo: index.html
-🧠 Desarrollado como ejemplo profesional y editable
-
-📝 INSTRUCCIONES DE EDICIÓN:
-- Logo: reemplazar "img/logo.png" por el tuyo.
-- Colores: modificar variables CSS en :root (--primary, --accent, etc.)
-- Imágenes: se encuentran en /img (Araña.jpg, Baston.jpg, Brazo.jpg, grupo.jpg)
-- Red social: modificar el enlace en el footer (por defecto Instagram)
-- Correo del club: buscar “technexclub@gmail.com” y reemplazar si es necesario.
-====================================================
--->
 
 <!DOCTYPE html>
 <html lang="es">
@@ -366,27 +351,9 @@ CLUB DE ROBÓTICA TECHNEX - LANDING PAGE
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // Animación on scroll
-    const faders = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    }, { threshold: 0.2 });
-    faders.forEach(f => observer.observe(f));
-
-    // Validación formulario
-    document.getElementById('contactForm').addEventListener('submit', e => {
-      e.preventDefault();
-      document.getElementById('formMessage').textContent = '✅ Mensaje enviado (simulado). Gracias por contactarte.';
-      e.target.reset();
-    });
-
-    // Copiar email
-    document.getElementById('copyEmail').addEventListener('click', () => {
-      navigator.clipboard.writeText('technexclub@gmail.com');
-      alert('Correo copiado al portapapeles');
-    });
+    
+    
+   
   </script>
 </body>
 </html>
